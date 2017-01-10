@@ -30,9 +30,9 @@ describe "holiday_supplies_hash" do
   # Write a method that adds a supply to all Winter holidays
   describe "#add_supply_to_winter_holidays" do
     it "iterates through winter holidays adds a supply to each one" do
-      add_supply_to_winter_holidays(holiday_supplies, "Balloons")
-      expect(holiday_supplies[:winter][:christmas]).to include("Balloons")
-      expect(holiday_supplies[:winter][:new_years]).to include("Balloons")
+      add_supply_to_winter_holidays(holiday_supplies, "Dog")
+      expect(holiday_supplies[:winter][:christmas]).to include("Dog")
+      expect(holiday_supplies[:winter][:new_years]).to include("Dog")
     end
   end
 
@@ -55,7 +55,7 @@ describe "holiday_supplies_hash" do
   # Question 4
   # Write a method that adds a new holiday and its associated supplies to any season
   describe "#add_new_holiday_with_supplies" do
-    it "modifies the original hash by adding supplies of a new holiday to a season" do 
+    it "modifies the original hash by adding supplies of a new holiday to a season" do
       columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
 
       add_new_holiday_with_supplies(holiday_supplies, :fall, :columbus_day, columbus_day_supplies)
@@ -69,7 +69,7 @@ describe "holiday_supplies_hash" do
       expect(holiday_supplies[:winter].keys).to include(:valentines_day)
       expect(holiday_supplies[:winter][:valentines_day]).to match_array(valentines_day_supplies)
     end
-  
+
   end
 
   # Question 5

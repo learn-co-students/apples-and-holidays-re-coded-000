@@ -44,6 +44,7 @@ end
 * Write a method that adds a supply to Memorial Day.
 
 * Write a method that adds a new holiday and its associated supplies to any season.
+                            # variable                      # variable      # variable
 
 * Write a method to collect all Winter supplies from all the winter holidays. For eg:
 
